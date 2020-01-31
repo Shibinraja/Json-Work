@@ -1,0 +1,91 @@
+var object = {name:"RajiniKanth",age:33,hasPets:false};
+var arr =[]
+
+function printAllValues(){
+	var object = {"name":"RajiniKanth","age":33,"hasPets":false};
+	var arr =[]
+
+	for (i in object){
+		hey=object[i]
+		arr.push(hey)
+	}
+console.log(arr)
+}
+printAllValues()
+
+////////////////////////////////////
+
+function Allkeys(){
+	var say = {"name":"RajiniKanth","age":33,"hasPets":false};
+	var arr =[]
+
+	for (i in say){
+	arr.push(i)
+	}
+console.log(arr)	
+}
+Allkeys()
+
+/////////////////////////////
+
+var obj = {"name":"ISRO", "age":35, "role":"Scientist"}
+var car=[]
+function convertListToObject(){
+	for (i in obj){
+	car[obj[i]]] = obj[obj[i]]
+	}
+console.log(car)
+}
+convertListToObject()
+
+//////////////////////////////////////////
+
+var arr = ["Guvi","I","am","Geek"];
+var arr1 ={}
+for (i in arr){
+    arr1[arr[0]] = arr[arr.length-1];
+}
+console.log(arr1)
+
+///////////////////////
+
+
+var array = [["make","Ford"],["model","Mustang"],["year",1964]];
+
+var object = {}
+
+for (i=0; i<array.length; ++i){
+	object[array[i][0]] = array[i][1];
+}
+
+console.log(object)
+
+/////////////////////////////
+
+
+var expected = {foo:5, bar:6};
+var actual = {foo:6, bar:6}
+
+exp = JSON.stringify(expected)
+act = JSON.stringify(actual)
+
+if ((JSON.stringify(expected)) == (JSON.stringify(actual))){
+console.log("Passed")}
+
+else{
+console.log("Failed Expected" +exp+ "but got" +act)} 
+
+/////////////////////////////////////////////////////////
+
+var arr= [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]], [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]];
+
+var transformList = {};
+
+for (i in arr){
+transformList[arr[i][0]]	
+}
+console.log(transformList)
+
+
+
+
